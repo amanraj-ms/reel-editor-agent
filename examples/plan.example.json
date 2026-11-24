@@ -1,0 +1,65 @@
+{
+  "brief": {
+    "style": "Original travel reel with red/white caption hierarchy and gentle photo motion",
+    "primary_reference": "/absolute/path/to/sample.mp4",
+    "exclusions": ["beach"],
+    "orientation_choice": "upright",
+    "music_permission": "Replace this only after the user explicitly confirms permission"
+  },
+  "width": 1080,
+  "height": 1920,
+  "fps": 30,
+  "font": "/absolute/path/to/your-font.ttf",
+  "fade_in_frames": 6,
+  "fade_out_frames": 15,
+  "balance": {
+    "equal_photo_counts": ["male", "female"],
+    "equal_subject_frames": ["male", "female"]
+  },
+  "audio": {
+    "source": "/absolute/path/to/authorized-track.wav",
+    "fingerprint": {"size": 0, "mtime_ns": 0},
+    "authorized": false
+  },
+  "captions": [
+    {
+      "start_frame": 0,
+      "end_frame": 45,
+      "fade_frames": 6,
+      "orientation": "upright",
+      "y": 550,
+      "lines": [
+        {"text": "A LITTLE ROAD", "size": 62, "color": "white"},
+        {"text": "A LOT OF MEMORIES", "size": 76, "color": "#e6002b"}
+      ]
+    }
+  ],
+  "shots": [
+    {
+      "kind": "photo",
+      "source": "/absolute/path/to/user-labelled-male.jpg",
+      "fingerprint": {"size": 0, "mtime_ns": 0},
+      "subject": "male",
+      "frames": 60,
+      "orientation": "upright",
+      "crop_center": [0.5, 0.6]
+    },
+    {
+      "kind": "photo",
+      "source": "/absolute/path/to/user-labelled-female.jpg",
+      "fingerprint": {"size": 0, "mtime_ns": 0},
+      "subject": "female",
+      "frames": 60,
+      "orientation": "upright",
+      "crop_center": [0.5, 0.6]
+    },
+    {
+      "kind": "photo",
+      "source": "/absolute/path/to/couple.jpg",
+      "fingerprint": {"size": 0, "mtime_ns": 0},
+      "subject": "couple",
+      "frames": 60,
+      "orientation": "upright"
+    }
+  ]
+}

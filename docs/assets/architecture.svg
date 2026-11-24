@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="650" viewBox="0 0 1200 650" role="img" aria-labelledby="title desc">
+  <title id="title">Reel Editor architecture</title>
+  <desc id="desc">The user and local originals provide inputs to the Copilot Reel Editor agent. Three skills guide review, reference editing and quality checks. The local Python CLI uses FFmpeg, ffprobe and Pillow to produce private job artifacts. Copilot image review may send frames to its configured model. There is no web backend or automatic upload.</desc>
+  <defs>
+    <linearGradient id="background" x2="1" y2="1">
+      <stop stop-color="#111b34"/>
+      <stop offset="1" stop-color="#1b2541"/>
+    </linearGradient>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+      <path d="M0 0 8 4 0 8" fill="none" stroke="#a8b8dc" stroke-width="1.5"/>
+    </marker>
+    <style>
+      text{font-family:Arial,Helvetica,sans-serif}
+      .heading{font-size:21px;font-weight:700;fill:#f5f7ff}
+      .body{font-size:16px;fill:#c3cee6}
+      .label{font-size:13px;font-weight:700;letter-spacing:1.5px}
+      .connector{fill:none;stroke:#a8b8dc;stroke-width:2;marker-end:url(#arrow)}
+    </style>
+  </defs>
+  <rect width="1200" height="650" rx="24" fill="url(#background)"/>
+  <text x="44" y="49" class="label" fill="#7dd3fc">ARCHITECTURE / NO WEB BACKEND REQUIRED</text>
+  <text x="44" y="92" fill="#ffffff" font-size="32" font-weight="700">Creative decisions in Copilot. Media work on your machine.</text>
+
+  <rect x="44" y="128" width="300" height="134" rx="16" fill="#142d47" stroke="#38bdf8" stroke-opacity=".6"/>
+  <text x="66" y="163" class="heading">You + your footage</text>
+  <text x="66" y="194" class="body">Local videos and photos</text>
+  <text x="66" y="221" class="body">Reference + music permission</text>
+  <text x="66" y="247" class="body">Creative choices and approval</text>
+
+  <rect x="400" y="128" width="756" height="134" rx="16" fill="#2b2348" stroke="#a78bfa" stroke-opacity=".7"/>
+  <text x="424" y="163" class="heading">Reel Editor / Copilot custom agent</text>
+  <text x="424" y="194" class="body">Visual review, sufficiency, story, concept approval and revisions.</text>
+  <text x="424" y="221" class="body">Uses your selected model and the host's available tools.</text>
+  <text x="424" y="247" class="body">Instructions guide the workflow; the CLI does not authenticate approval.</text>
+  <path d="M346 195H392" class="connector"/>
+
+  <rect x="44" y="300" width="300" height="146" rx="16" fill="#123432" stroke="#2dd4bf" stroke-opacity=".6"/>
+  <text x="66" y="334" class="heading">Three project skills</text>
+  <text x="66" y="367" class="body">Media review and selection</text>
+  <text x="66" y="394" class="body">Reference-driven edit planning</text>
+  <text x="66" y="421" class="body">Quality checks and delivery</text>
+
+  <rect x="400" y="300" width="350" height="146" rx="16" fill="#302141" stroke="#e879f9" stroke-opacity=".6"/>
+  <text x="424" y="334" class="heading">Local Python CLI</text>
+  <text x="424" y="367" class="body">doctor / scan / reference</text>
+  <text x="424" y="394" class="body">render / validate</text>
+  <text x="424" y="421" class="body">Fingerprints + integer-frame plans</text>
+
+  <rect x="806" y="300" width="350" height="146" rx="16" fill="#3b2b24" stroke="#fbbf24" stroke-opacity=".6"/>
+  <text x="830" y="334" class="heading">Installed media tools</text>
+  <text x="830" y="367" class="body">FFmpeg + ffprobe</text>
+  <text x="830" y="394" class="body">Pillow + local fonts</text>
+  <text x="830" y="421" class="body">Optional macOS HEIC fallback</text>
+
+  <path d="M575 264V292" class="connector"/>
+  <path d="M346 373H392" class="connector"/>
+  <path d="M752 373H798" class="connector"/>
+
+  <rect x="44" y="484" width="1112" height="91" rx="16" fill="#193429" stroke="#4ade80" stroke-opacity=".6"/>
+  <text x="66" y="518" class="heading">Private local jobs / ignored by Git</text>
+  <text x="66" y="550" class="body">Inventory + contact sheets + selection notes + reference evidence + plan + timeline + MP4 + validation</text>
+  <path d="M575 448V476" class="connector"/>
+  <path d="M980 448V476" class="connector"/>
+
+  <text x="44" y="610" class="body">Privacy boundary: Copilot image review may send frames to its configured model. No automatic media upload or publishing.</text>
+</svg>
